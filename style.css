@@ -1,0 +1,98 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Habilitar scroll en toda la página */
+html, body {
+    height: 100%;
+    overflow-y: auto;
+    display: block; /* Permite que los elementos fluyan de arriba hacia abajo */
+    background-color: #ffe5e5;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 500px;
+    margin:auto;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 15px;
+
+}
+
+/* GIF */
+.container .tenor-gif-embed {
+    display: flex;
+    max-width: 200px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding-top: 195px;
+
+}
+.sabia {
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+/* Estilo para las imágenes y videos */
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Repite las columnas */
+    gap: 15px; /* Espacio entre las imágenes */
+    padding: 20px;
+    width: 90%;
+}
+
+.imagenes img, .imagenes video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Asegura que la imagen/video cubra bien el espacio */
+}
+
+/* Contenido con scroll interno */
+.scrollable-content {
+    max-height: 200px; /* Ajusta la altura según lo necesites */
+    overflow-y: auto;
+    border-radius: 12px;
+    padding: 15px;
+    padding-top: 15px;
+    width: 90%;
+    background: linear-gradient(to bottom, #ffcccc, #ffe5e5); /* Degradado suave */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    text-align: center;
+    font-family: 'Georgia', serif; /* Fuente elegante */
+    font-size: 1.1em;
+    color: #5a3d3d;
+    line-height: 1.5;
+    border: 2px solid #ffaaaa;
+    margin: auto;
+}
+
+/* Personalización del scroll interno */
+.scrollable-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+    background: #ffaaaa;
+    border-radius: 10px;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+    background: #ffe5e5;
+}
+
+/* Mensaje de "Desliza para abajo" */
+.container h1 {
+    font-size: 1.5em;
+    color: #5a3d3d;
+}
