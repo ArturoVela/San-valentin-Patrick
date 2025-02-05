@@ -99,7 +99,17 @@ html, body {
 
 
 
+.container .btn {
+    display: flex;
+    gap: 25px;
+    margin: auto;
+    padding-top: 20px;
+
+}
+
 .btn a {
+    margin: auto;
+    align-items: center;
     text-decoration: none;
     color: #111;
     background: #fff;
